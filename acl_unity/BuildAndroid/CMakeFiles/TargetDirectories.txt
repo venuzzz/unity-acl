@@ -1,0 +1,3 @@
+C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/acl_unity.dir
+C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/edit_cache.dir
+C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/rebuild_cache.dir

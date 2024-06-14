@@ -1,7 +1,8 @@
-
+#pragma once
+#define UNITY_ANDROID
 #include <string>
 #include <vector>
-
+#include "Unity/includes/IUnityInterface.h"
 #include "acl/decompression/decompress.h"
 
 using default_decompression_type = acl::decompression_context<acl::decompression_settings>;
@@ -97,13 +98,28 @@ struct my_track_writer_ex : my_track_writer
 	float scale_threshold;
 };
 
-extern "C" __declspec(dllexport) bool IsCompressedTracksValid (void* buffer)
+//use unity macro to check android.
+void* x_aligned_malloc(size_t sz, size_t align)
+{
+	void *result = nullptr;
+#ifdef _MSC_VER 
+	result = _aligned_malloc(sz, align);
+#elif __APPLE__
+	if (posix_memalign(&result, align, sz)) result = nullptr;
+#elif UNITY_ANDROID
+	//__linux__
+	result = memalign(align, sz);
+#endif
+	return result;
+}
+
+extern "C"    UNITY_INTERFACE_EXPORT  bool IsCompressedTracksValid (void* buffer)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	return (tracks != nullptr && tracks->is_valid(false).empty());
 }
 
-extern "C" __declspec(dllexport) int GetNumTracks (void* buffer)
+extern "C"  UNITY_INTERFACE_EXPORT   int GetNumTracks (void* buffer)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	if (tracks != nullptr)
@@ -111,7 +127,7 @@ extern "C" __declspec(dllexport) int GetNumTracks (void* buffer)
 	return 0;
 }
 
-extern "C" __declspec(dllexport) float GetDuration (void* buffer)
+extern "C"   UNITY_INTERFACE_EXPORT float GetDuration (void* buffer)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	if (tracks != nullptr)
@@ -119,7 +135,7 @@ extern "C" __declspec(dllexport) float GetDuration (void* buffer)
 	return 0;
 }
 
-extern "C" __declspec(dllexport) const char* GetTrackName (void* buffer, int track_index)
+extern "C" UNITY_INTERFACE_EXPORT  const char*  GetTrackName (void* buffer, int track_index)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	if (tracks != nullptr)
@@ -127,7 +143,7 @@ extern "C" __declspec(dllexport) const char* GetTrackName (void* buffer, int tra
 	return nullptr;
 }
 
-extern "C" __declspec(dllexport) int GetParentTrackIndex (void* buffer, int track_index)
+extern "C"   UNITY_INTERFACE_EXPORT int GetParentTrackIndex (void* buffer, int track_index)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	if (tracks != nullptr)
@@ -135,7 +151,7 @@ extern "C" __declspec(dllexport) int GetParentTrackIndex (void* buffer, int trac
 	return acl::k_invalid_track_index;
 }
 
-extern "C" __declspec(dllexport) void* PrepareDecompressContext (void* buffer)
+extern "C"   UNITY_INTERFACE_EXPORT void* PrepareDecompressContext (void* buffer)
 {
 	const auto& tracks = acl::make_compressed_tracks(buffer, nullptr);
 	if (!tracks)
@@ -143,7 +159,7 @@ extern "C" __declspec(dllexport) void* PrepareDecompressContext (void* buffer)
 		return nullptr;
 	}
 
-	const auto context = new (_aligned_malloc(sizeof(default_decompression_type), 64))default_decompression_type();
+	const auto context = new (x_aligned_malloc(sizeof(default_decompression_type), 64))default_decompression_type();
 	if (!context->initialize(*tracks))
 	{
 		((default_decompression_type*)context)->~decompression_context();
@@ -154,7 +170,7 @@ extern "C" __declspec(dllexport) void* PrepareDecompressContext (void* buffer)
 	return context;
 }
 
-extern "C" __declspec(dllexport) void ReleaseDecompressContext (void* context)
+extern "C"  UNITY_INTERFACE_EXPORT void  ReleaseDecompressContext (void* context)
 {
 	if (context)
 	{
@@ -163,7 +179,7 @@ extern "C" __declspec(dllexport) void ReleaseDecompressContext (void* context)
 	}
 }
 
-extern "C" __declspec(dllexport) void SeekInContext (void* context, float sample_time, int rounding_policy)
+extern "C"   UNITY_INTERFACE_EXPORT void SeekInContext (void* context, float sample_time, int rounding_policy)
 {
 	if (context)
 	{
@@ -171,7 +187,7 @@ extern "C" __declspec(dllexport) void SeekInContext (void* context, float sample
 	}
 }
 
-extern "C" __declspec(dllexport) void DecompressTracks (void* context, void* result, char* flags)
+extern "C"   UNITY_INTERFACE_EXPORT void DecompressTracks (void* context, void* result, char* flags)
 {
 	if (context)
 	{
@@ -183,7 +199,7 @@ extern "C" __declspec(dllexport) void DecompressTracks (void* context, void* res
 	}
 }
 
-extern "C" __declspec(dllexport) void DecompressTracksEx (void* context, void* result, char* flags, float pos_threshold, float rot_threshold, float scale_threshold)
+extern "C"   UNITY_INTERFACE_EXPORT void DecompressTracksEx (void* context, void* result, char* flags, float pos_threshold, float rot_threshold, float scale_threshold)
 {
 	if (context)
 	{
@@ -193,3 +209,5 @@ extern "C" __declspec(dllexport) void DecompressTracksEx (void* context, void* r
 		((default_decompression_type*)context)->decompress_tracks(writer);
 	}
 }
+
+

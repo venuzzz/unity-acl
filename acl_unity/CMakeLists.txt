@@ -11,6 +11,7 @@ include(CMakePlatforms)
 
 set(CMAKE_CXX_STANDARD 11)
 
+include_directories("${PROJECT_SOURCE_DIR}/Unity/includes")
 include_directories("${PROJECT_SOURCE_DIR}/acl/includes")
 include_directories("${PROJECT_SOURCE_DIR}/acl/external/rtm/includes")
 

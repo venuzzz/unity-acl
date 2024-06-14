@@ -1,0 +1,246 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:199 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The target system is: Android - 29 - armv7-a
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/3.26.0-rc4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt"
+      binary: "C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt"
+    cmakeVariables:
+      CMAKE_ANDROID_STL_TYPE: "c++_static"
+      CMAKE_CXX_COMPILER_EXTERNAL_TOOLCHAIN: ""
+      CMAKE_CXX_COMPILER_TARGET: "armv7-none-linux-androideabi29"
+      CMAKE_CXX_FLAGS: "-march=armv7-a -mthumb -mfpu=vfpv3-d16 -mfloat-abi=softfp -funwind-tables -no-canonical-prefixes -fexceptions -frtti -stdlib=libc++"
+      CMAKE_EXE_LINKER_FLAGS: "-Wl,--fix-cortex-a8  -fPIE -pie -Wl,--gc-sections -Wl,-z,nocopyreloc"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt
+        
+        Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_78141/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_78141.dir\\build.make CMakeFiles/cmTC_78141.dir/build
+        mingw32-make.exe[1]: Entering directory 'C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt'
+        Building CXX object CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o
+        C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi29   -march=armv7-a -mthumb -mfpu=vfpv3-d16 -mfloat-abi=softfp -funwind-tables -no-canonical-prefixes -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_78141.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles\\cmTC_78141.dir\\CMakeCXXCompilerABI.cpp.o -c "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"
+        Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+        Target: armv7-none-linux-android29
+        Thread model: posix
+        InstalledDir: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin
+        Found candidate GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi\\4.9.x
+        Selected GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi/4.9.x
+        Candidate multilib: thumb;@mthumb
+        Candidate multilib: armv7-a;@march=armv7-a
+        Candidate multilib: armv7-a/thumb;@march=armv7-a@mthumb
+        Candidate multilib: .;
+        Selected multilib: armv7-a/thumb;@march=armv7-a@mthumb
+         "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin\\\\clang++.exe" -cc1 -triple thumbv7-none-linux-android29 -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +soft-float-abi -target-feature -fp-only-sp -target-feature +d16 -target-feature +vfp3 -target-feature -fp16 -target-feature -vfp4 -target-feature -fp-armv8 -target-feature -neon -target-feature -crypto -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -coverage-notes-file "C:\\\\Users\\\\azheng\\\\Desktop\\\\animCompress\\\\unity-acl\\\\acl_unity\\\\BuildAndroid\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-bw6mtt\\\\CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.gcno" -resource-dir "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7" -dependency-file "CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -sys-header-deps -MT CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -D NDEBUG -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/local/include" -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\include" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include/arm-linux-androideabi" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/include" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include" -O2 -fdeprecated-macro -fdebug-compilation-dir "C:\\\\Users\\\\azheng\\\\Desktop\\\\animCompress\\\\unity-acl\\\\acl_unity\\\\BuildAndroid\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-bw6mtt" -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o "CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.o" -x c++ "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-3.26\\\\Modules\\\\CMakeCXXCompilerABI.cpp" -faddrsig
+        clang -cc1 version 8.0.7 based upon LLVM 8.0.7svn default target x86_64-w64-windows-gnu
+        ignoring nonexistent directory "C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include/c++/v1
+         C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/local/include
+         C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\include
+         C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include/arm-linux-androideabi
+         C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include
+        End of search list.
+        Linking CXX executable cmTC_78141
+        "C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_78141.dir\\link.txt --verbose=1
+        C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi29 -march=armv7-a -mthumb -mfpu=vfpv3-d16 -mfloat-abi=softfp -funwind-tables -no-canonical-prefixes -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl,--fix-cortex-a8  -fPIE -pie -Wl,--gc-sections -Wl,-z,nocopyreloc -v CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_78141   -static-libstdc++ -latomic -lm 
+        Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)
+        Target: armv7-none-linux-android29
+        Thread model: posix
+        InstalledDir: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin
+        Found candidate GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi\\4.9.x
+        Selected GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi/4.9.x
+        Candidate multilib: thumb;@mthumb
+        Candidate multilib: armv7-a;@march=armv7-a
+        Candidate multilib: armv7-a/thumb;@march=armv7-a@mthumb
+        Candidate multilib: .;
+        Selected multilib: armv7-a/thumb;@march=armv7-a@mthumb
+         "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\\\ld" -pie -EL -z now -z relro -X --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_78141 "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtbegin_dynamic.o" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\lib\\\\linux\\\\arm" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/../lib" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/../../lib" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib" --fix-cortex-a8 --gc-sections -z nocopyreloc CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtend_android.o"
+        mingw32-make.exe[1]: Leaving directory 'C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include/c++/v1]
+          add: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/local/include]
+          add: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include]
+          add: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include/arm-linux-androideabi]
+          add: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include]
+        end of search list found
+        collapse include dir [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include/c++/v1] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1]
+        collapse include dir [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/local/include] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include]
+        collapse include dir [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include]
+        collapse include dir [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include/arm-linux-androideabi] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi]
+        collapse include dir [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/bin/../sysroot/usr/include] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+        implicit include dirs: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/c++/v1;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/local/include;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/include;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include/arm-linux-androideabi;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld\\.lld\\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt]
+        ignore line: []
+        ignore line: [Run Build Command(s):C:/Program Files/CMake/bin/cmake.exe -E env VERBOSE=1 C:/MinGW/bin/mingw32-make.exe -f Makefile cmTC_78141/fast && C:/MinGW/bin/mingw32-make.exe  -f CMakeFiles\\cmTC_78141.dir\\build.make CMakeFiles/cmTC_78141.dir/build]
+        ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/azheng/Desktop/animCompress/unity-acl/acl_unity/BuildAndroid/CMakeFiles/CMakeScratch/TryCompile-bw6mtt']
+        ignore line: [Building CXX object CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi29   -march=armv7-a -mthumb -mfpu=vfpv3-d16 -mfloat-abi=softfp -funwind-tables -no-canonical-prefixes -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -fPIE   -v -MD -MT CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles\\cmTC_78141.dir\\CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles\\cmTC_78141.dir\\CMakeCXXCompilerABI.cpp.o -c "C:\\Program Files\\CMake\\share\\cmake-3.26\\Modules\\CMakeCXXCompilerABI.cpp"]
+        ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
+        ignore line: [Target: armv7-none-linux-android29]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin]
+        ignore line: [Found candidate GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi\\4.9.x]
+        ignore line: [Selected GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi/4.9.x]
+        ignore line: [Candidate multilib: thumb]
+        ignore line: [@mthumb]
+        ignore line: [Candidate multilib: armv7-a]
+        ignore line: [@march=armv7-a]
+        ignore line: [Candidate multilib: armv7-a/thumb]
+        ignore line: [@march=armv7-a@mthumb]
+        ignore line: [Candidate multilib: .]
+        ignore line: []
+        ignore line: [Selected multilib: armv7-a/thumb]
+        ignore line: [@march=armv7-a@mthumb]
+        ignore line: [ "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin\\\\clang++.exe" -cc1 -triple thumbv7-none-linux-android29 -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +soft-float-abi -target-feature -fp-only-sp -target-feature +d16 -target-feature +vfp3 -target-feature -fp16 -target-feature -vfp4 -target-feature -fp-armv8 -target-feature -neon -target-feature -crypto -target-abi aapcs-linux -mfloat-abi soft -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -coverage-notes-file "C:\\\\Users\\\\azheng\\\\Desktop\\\\animCompress\\\\unity-acl\\\\acl_unity\\\\BuildAndroid\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-bw6mtt\\\\CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.gcno" -resource-dir "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7" -dependency-file "CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.o.d" -sys-header-deps -MT CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -D NDEBUG -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include/c++/v1" -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/local/include" -internal-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\include" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include/arm-linux-androideabi" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/include" -internal-externc-isystem "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/include" -O2 -fdeprecated-macro -fdebug-compilation-dir "C:\\\\Users\\\\azheng\\\\Desktop\\\\animCompress\\\\unity-acl\\\\acl_unity\\\\BuildAndroid\\\\CMakeFiles\\\\CMakeScratch\\\\TryCompile-bw6mtt" -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o "CMakeFiles\\\\cmTC_78141.dir\\\\CMakeCXXCompilerABI.cpp.o" -x c++ "C:\\\\Program Files\\\\CMake\\\\share\\\\cmake-3.26\\\\Modules\\\\CMakeCXXCompilerABI.cpp" -faddrsig]
+        ignore line: [clang -cc1 version 8.0.7 based upon LLVM 8.0.7svn default target x86_64-w64-windows-gnu]
+        ignore line: [ignoring nonexistent directory "C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include/c++/v1]
+        ignore line: [ C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/local/include]
+        ignore line: [ C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\8.0.7\\include]
+        ignore line: [ C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include/arm-linux-androideabi]
+        ignore line: [ C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../sysroot/usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_78141]
+        ignore line: ["C:\\Program Files\\CMake\\bin\\cmake.exe" -E cmake_link_script CMakeFiles\\cmTC_78141.dir\\link.txt --verbose=1]
+        ignore line: [C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi29 -march=armv7-a -mthumb -mfpu=vfpv3-d16 -mfloat-abi=softfp -funwind-tables -no-canonical-prefixes -fexceptions -frtti -stdlib=libc++  -O2 -g -DNDEBUG -Wl --fix-cortex-a8  -fPIE -pie -Wl --gc-sections -Wl -z nocopyreloc -v CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_78141   -static-libstdc++ -latomic -lm ]
+        ignore line: [Android (5220042 based on r346389c) clang version 8.0.7 (https://android.googlesource.com/toolchain/clang b55f2d4ebfd35bf643d27dbca1bb228957008617) (https://android.googlesource.com/toolchain/llvm 3c393fe7a7e13b0fba4ac75a01aa683d7a5b11cd) (based on LLVM 8.0.7svn)]
+        ignore line: [Target: armv7-none-linux-android29]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin]
+        ignore line: [Found candidate GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi\\4.9.x]
+        ignore line: [Selected GCC installation: C:\\Users\\azheng\\AppData\\Local\\Android\\Sdk\\ndk\\20\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin/../lib/gcc/arm-linux-androideabi/4.9.x]
+        ignore line: [Candidate multilib: thumb]
+        ignore line: [@mthumb]
+        ignore line: [Candidate multilib: armv7-a]
+        ignore line: [@march=armv7-a]
+        ignore line: [Candidate multilib: armv7-a/thumb]
+        ignore line: [@march=armv7-a@mthumb]
+        ignore line: [Candidate multilib: .]
+        ignore line: []
+        ignore line: [Selected multilib: armv7-a/thumb]
+        ignore line: [@march=armv7-a@mthumb]
+        link line: [ "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\\\ld" -pie -EL -z now -z relro -X --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m armelf_linux_eabi -dynamic-linker /system/bin/linker -o cmTC_78141 "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtbegin_dynamic.o" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\lib\\\\linux\\\\arm" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/../lib" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/../../lib" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb" "-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib" --fix-cortex-a8 --gc-sections -z nocopyreloc CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o -latomic -lm -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl "C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtend_android.o"]
+          arg [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/bin\\\\ld] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-X] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--enable-new-dtags] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/system/bin/linker] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_78141] ==> ignore
+          arg [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtbegin_dynamic.o] ==> obj [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtbegin_dynamic.o]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\lib\\\\linux\\\\arm] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\lib\\\\linux\\\\arm]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/../lib] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/../lib]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/../../lib] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/../../lib]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb]
+          arg [-LC:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib] ==> dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib]
+          arg [--fix-cortex-a8] ==> ignore
+          arg [--gc-sections] ==> ignore
+          arg [-znocopyreloc] ==> ignore
+          arg [CMakeFiles/cmTC_78141.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-latomic] ==> lib [atomic]
+          arg [-lm] ==> lib [m]
+          arg [-Bstatic] ==> search static
+          arg [-lc++] ==> lib [c++]
+          arg [-Bdynamic] ==> search dynamic
+          arg [-lm] ==> lib [m]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-ldl] ==> lib [dl]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-ldl] ==> lib [dl]
+          arg [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtend_android.o] ==> obj [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtend_android.o]
+        collapse obj [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtbegin_dynamic.o] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29/crtbegin_dynamic.o]
+        collapse obj [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29\\\\crtend_android.o] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29/crtend_android.o]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\lib64\\\\clang\\\\8.0.7\\\\lib\\\\linux\\\\arm] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/arm]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/../lib/armv7-a/thumb] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/29] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/../lib] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib/arm-linux-androideabi/../../lib] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../lib/gcc/arm-linux-androideabi/4.9.x/../../../../arm-linux-androideabi/lib/armv7-a/thumb] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb]
+        collapse library dir [C:\\\\Users\\\\azheng\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\20\\\\toolchains\\\\llvm\\\\prebuilt\\\\windows-x86_64\\\\bin/../sysroot/usr/lib] ==> [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        implicit libs: [atomic;m;c++;m;gcc;dl;c;gcc;dl]
+        implicit objs: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29/crtbegin_dynamic.o;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29/crtend_android.o]
+        implicit dirs: [C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/8.0.7/lib/linux/arm;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/lib/gcc/arm-linux-androideabi/4.9.x/armv7-a/thumb;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/arm-linux-androideabi/lib/armv7-a/thumb;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi/29;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/arm-linux-androideabi;C:/Users/azheng/AppData/Local/Android/Sdk/ndk/20/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib]
+        implicit fwks: []
+      
+      
+...
